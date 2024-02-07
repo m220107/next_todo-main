@@ -47,8 +47,8 @@ export default function Home() {
   if (isLoading) return <Loading />
 
   return (
-    <div>
-      <TodoForm
+    <div className=" text-gray-700 leading-tight mb-3 p-3 rounded">
+      <TodoForm 
         onSaveTodo={saveTodo}
         autoCompleteTags={autoCompleteTags} />
       <TodoList
