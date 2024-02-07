@@ -22,7 +22,7 @@ export const postTodos = async (todos: Todo[]) => {
     const data = JSON.stringify(todos);
     //TODO: APIで保存し、データを返す
     const response = await fetch(url, {
-        method: "GET",
+        method: "POST",
         headers: {
             'Authorization': `Bearer ${todos}`,
             'Content-Type': 'application/json',
